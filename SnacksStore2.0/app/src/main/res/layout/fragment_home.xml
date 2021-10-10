@@ -1,0 +1,30 @@
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.HomeFragment">
+    <include
+            android:id="@+id/home_title_bar"
+            layout="@layout/title_bar_home"/>
+
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/snacks_list"
+            android:layout_below="@+id/home_title_bar"
+            android:scrollbars="none">
+
+    </ListView>
+
+    <ImageButton
+            android:id="@+id/button_2top"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/home_2top"
+            android:visibility="visible"/>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+>
+    <ImageView
+            android:id="@+id/snacks_item_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:background="@color/gray"
+            android:scaleType="centerCrop"/>
+
+    <TextView
+            android:id="@+id/snacks_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:paddingStart="20dp"
+            android:text=""
+            android:layout_toEndOf="@id/snacks_item_image"
+            tools:ignore="RtlSymmetry" android:padding="5dp"/>
+
+    <TextView
+            android:id="@+id/snacks_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/red_6754"
+            android:paddingStart="20dp"
+            android:paddingTop="0dp"
+            android:drawableStart="@drawable/home_item_rmb"
+            android:layout_below="@id/snacks_item_name"
+            android:layout_toEndOf="@id/snacks_item_image"
+            tools:ignore="RtlSymmetry"
+            android:layout_marginTop="5dp"/>
+
+    <TextView
+            android:id="@+id/snacks_item_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:paddingStart="20dp"
+            android:paddingTop="0dp"
+            android:layout_marginTop="5dp"
+            android:text=""
+            android:layout_below="@id/snacks_item_price"
+            android:layout_toEndOf="@id/snacks_item_image"
+            tools:ignore="RtlSymmetry"/>
+    <TextView
+            android:id="@+id/snacks_item_expire_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/gray"
+            android:paddingStart="20dp"
+            android:paddingTop="0dp"
+            android:text=""
+            android:layout_below="@id/snacks_item_weight"
+            android:layout_toEndOf="@id/snacks_item_image"
+            tools:ignore="RtlSymmetry"/>
+
+    <ImageView
+            android:clickable="true"
+            android:id="@+id/snacks_item_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/home_item_buy"
+            android:focusable="true"/>
+</RelativeLayout>

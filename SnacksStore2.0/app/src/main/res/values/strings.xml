@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SnacksStore</string>
+    <drawable name="red_normal">#CCF12626</drawable>
+    <drawable name="red_pressed">#CCD62020</drawable>
+    <drawable name="blue_normal">#CC368CF4</drawable>
+    <drawable name="blue_pressed">#CC2074DA</drawable>
+</resources>
